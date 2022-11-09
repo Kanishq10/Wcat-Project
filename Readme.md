@@ -1,6 +1,6 @@
 This project read data from file and print in console and can also format the data
 
-#Making Node commands Global:
+# Making Node command Global:
 
 For making node command global first type ||#!/usr/bin/env node|| on main file
  then:
