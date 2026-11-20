@@ -1,51 +1,62 @@
 # Wcat Project
 
-**Portfolio project** · A Node.js command-line tool for reading, combining, or displaying file content.
+A Node.js command-line utility for reading and composing text-file output.
 
 ## Overview
 
-A Node.js command-line tool for reading, combining, or displaying file content.
+The repository contains an implemented application or analysis project with code organized around its primary runtime, interface, data, or automation responsibilities.
+
+## Key Features
+
+- Node.js command execution or server runtime
+- Modular source organization
+- External I/O or API integration
+- Scripted or interactive output
 
 ## Technology Stack
 
-- `Node.js`
-- `JavaScript`
+| Area | Technology |
+|---|---|
+| Platform | Node.js |
+| Library / Framework / Tool | JavaScript |
 
-## How the Repository Works
+## Architecture and Data Flow
 
 ```mermaid
 flowchart LR
-    N0["Command input<br/> Parse arguments"]
-    N1["File operation<br/> Inspect or transform files"]
+    N0["Command Input<br/> Arguments and command options are parsed."]
+    N1["Filesystem Operation<br/> Files are inspected or transformed."]
+    N2["Result<br/> The operation reports output or progress."]
     N0 --> N1
-    N2["Result<br/> Report the operation outcome"]
     N1 --> N2
 ```
 
 | Stage | Responsibility |
 |---|---|
-| **Command input** | Parse arguments |
-| **File operation** | Inspect or transform files |
-| **Result** | Report the operation outcome |
+| **Command Input** | Arguments and command options are parsed. |
+| **Filesystem Operation** | Files are inspected or transformed. |
+| **Result** | The operation reports output or progress. |
 
-## Concepts Covered
-
-- JavaScript runtime
-- Asynchronous I/O
-- Modules and packages
-- HTTP or CLI workflows
-- External integrations
-
-## Repository Map
+## Repository Structure
 
 - `components`
 - `package.json`
 - `wcat.js`
 
-## Recruiter Summary
+## Setup
 
-This repository demonstrates practical implementation skills, repository organization, and an end-to-end understanding of the project workflow. It is suitable as a focused example of applied software or data work.
+1. Install Node.js and npm.
+2. Run `npm install` from the repository root.
+3. Start the project with the applicable script below.
 
----
+## Usage
 
-<sub>Documentation is concise and project-focused; source code was not modified.</sub>
+- `npm run test` — echo "Error: no test specified" && exit 1
+
+## Configuration
+
+Review `package.json` for available scripts and runtime dependencies. Add environment variables locally only when a feature requires external credentials or service configuration.
+
+## Verification
+
+- `npm run test` — echo "Error: no test specified" && exit 1
